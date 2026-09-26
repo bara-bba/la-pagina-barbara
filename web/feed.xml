@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Site updates. Add a new <item> at the TOP for each update. -->
+<rss version="2.0">
+  <channel>
+    <title>La Pagina Barbara - Updates</title>
+    <link>https://example.com/</link>
+    <description>Site updates and new works.</description>
+    <language>it</language>
+    <item>
+      <title>Homepage online</title>
+      <link>https://example.com/</link>
+      <pubDate>Sat, 26 Sep 2026 18:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Design scheme v2</title>
+      <link>https://example.com/#work</link>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 +0200</pubDate>
+    </item>
+  </channel>
+</rss>

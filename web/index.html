@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Pagina Barbara</title>
+<meta name="description" content="Personal index of projects: design, robotics, tools.">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="La Pagina Barbara - Updates" href="feed.xml">
+</head>
+<body>
+<a class="skip" href="#work">Skip to projects</a>
+
+<!-- Shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Corner bracket: two nested angle brackets, like the chevrons in the mark -->
+  <symbol id="corner" viewBox="0 0 48 48">
+    <path d="M3 45V3h42" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="miter"/>
+    <path d="M13 45V13h32" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="miter"/>
+  </symbol>
+</svg>
+
+<header class="bar" role="banner">
+  <span>La Pagina Barbara</span>
+  <nav aria-label="Main">
+    <a href="#work">Opere</a><a href="#about">Chi</a><a href="#contact">Contatti</a>
+  </nav>
+  <span id="today">-- &bull; -- &bull; --</span>
+</header>
+
+<main>
+  <!-- HERO: title box + updates box, works slider, logo bottom-right -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <div class="box">
+        <span class="bracket tl" aria-hidden="true"><svg><use href="#corner"/></svg></span><span class="bracket br" aria-hidden="true"><svg><use href="#corner"/></svg></span>
+        <span class="tag">Design, robotica &amp; codice</span>
+        <h1 id="hero-title" class="site-title">La Pagina Barbara</h1>
+        <p class="intro">Un indice personale di progetti: grafica, robot che disegnano e piccoli strumenti.</p>
+      </div>
+
+      <aside class="box feed" aria-labelledby="feed-title">
+        <span class="bracket tl" aria-hidden="true"><svg><use href="#corner"/></svg></span><span class="bracket br" aria-hidden="true"><svg><use href="#corner"/></svg></span>
+        <span class="tag">Aggiornamenti</span>
+        <div class="feed-head">
+          <h2 id="feed-title">Novit&agrave; dal sito</h2>
+          <a href="feed.xml">rss</a>
+        </div>
+        <ol class="feed-list" id="feed-list"><li class="muted">...</li></ol>
+      </aside>
+    </div>
+
+    <!-- Latest works: horizontal slider -->
+    <section class="latest" aria-labelledby="latest-title">
+      <div class="latest-head">
+        <h2 id="latest-title">Ultime opere</h2>
+        <div class="latest-nav">
+          <button type="button" id="latest-prev" aria-label="Previous projects">&lsaquo;</button>
+          <button type="button" id="latest-next" aria-label="Next projects">&rsaquo;</button>
+        </div>
+      </div>
+      <ol class="latest-track" id="latest" tabindex="0" aria-label="Latest projects, scroll horizontally"></ol>
+    </section>
+
+    <div class="logo-wrap logo-corner" role="img" aria-label="BARBARA BARBARA">
+      <div class="bb-logo" id="bb-logo" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="work" class="works" aria-labelledby="work-title">
+    <h2 id="work-title" class="section-title">Indice delle opere</h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" class="on" data-filter="all" aria-pressed="true">tutte</button>
+      <button type="button" data-filter="design" aria-pressed="false">design</button>
+      <button type="button" data-filter="robotics" aria-pressed="false">robotica</button>
+      <button type="button" data-filter="code" aria-pressed="false">codice</button>
+    </div>
+    <ol class="cards" id="cards"></ol>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="section-title">Chi</h2>
+    <p class="about-text">Engineer and designer. Graphic design, industrial automation and small sharp tools &mdash;
+      made with Affinity, ABB RobotStudio, Python and PLCs.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="section-title">Scrivimi</h2>
+    <p class="about-text"><a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p class="muted small">placeholder &mdash; replace before publishing</p>
+  </section>
+</main>
+
+<footer class="bar">
+  <span>&copy; 2026</span><span>La Pagina Barbara</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
